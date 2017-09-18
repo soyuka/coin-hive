@@ -36,14 +36,14 @@ console.log('Initializing...');
       console.log('Port:', port);
       console.log('Host:', host, '\n');
 
-      miner.on('found', () => console.log('Found!'))
+      //miner.on('found', () => console.log('Found!'))
       miner.on('accepted', () => console.log('Accepted!'))
-      miner.on('update', (data) => console.log(`
-Hashes per second: ${data.hashesPerSecond}
-Total hashes: ${data.totalHashes}
-Accepted hashes: ${data.acceptedHashes}
-Threads: ${data.threads}
-      `));
+/*       miner.on('update', (data) => console.log(` */
+/* Hashes per second: ${data.hashesPerSecond} */
+/* Total hashes: ${data.totalHashes} */
+/* Accepted hashes: ${data.acceptedHashes} */
+/* Threads: ${data.threads} */
+/*       `)); */
     }
   }
 })()
